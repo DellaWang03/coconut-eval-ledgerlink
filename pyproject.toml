@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ledgerlink"
+version = "0.1.0"
+description = "CLI tool for reconciling invoice ledgers with payment records"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+ledgerlink = "ledgerlink.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
