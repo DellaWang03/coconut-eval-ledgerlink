@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+*.egg
+.pytest_cache/
+.mypy_cache/
+*.csv
+*.json
+!tests/fixtures/*.csv
